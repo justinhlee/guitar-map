@@ -1,0 +1,107 @@
+/* 
+Body
+-------------------------------------------------------------------------------
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  color: #444;
+  margin: 0;
+  height: 100%;
+}
+
+
+.content {
+  padding-top: 100px;
+}
+
+hr {
+  border: solid #999;
+  border-width: 1px 0 0;
+}
+
+/* 
+Typography 
+-------------------------------------------------------------------------------
+*/
+
+
+h1 {
+  padding-left: 2px;
+}
+
+a, a:visited {
+  color: #444;
+  text-decoration: none;
+  text-decoration: underline;
+ 
+}
+
+a:hover, a:focus {
+  color: #999;
+}
+
+
+/* 
+Grid 
+-------------------------------------------------------------------------------
+*/
+
+.row {
+  clear: both;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+[class^="col-"] {
+    float: left;
+    margin: 0% 2.5% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 10.3125% } 
+.col-2 { width: 23.125%; }
+.col-3 { width: 35.9375%; } 
+.col-4 { width: 48.75%;}
+.col-5 { width: 61.5625%;} 
+.col-6 { width: 74.375%;}
+.col-7 { width: 87.1875%; } 
+.col-8 { width: 100% } 
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .row { width: 768px; margin-left: 10; margin-right: 10; }      
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .row { margin: 10; width: 420px; }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8 { width: 420px; }
+}
+
+@media only screen and (max-width: 767px) {
+  .row { margin: 10; width: 300px; }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8 { width: 300px; }
+}
