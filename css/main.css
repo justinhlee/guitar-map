@@ -4,9 +4,9 @@ Body
 */
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
-  line-height: 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 400;
   letter-spacing: 0.75px;
   color: #444;
@@ -15,14 +15,40 @@ body {
 }
 
 
-.content {
+.content, .content-inner {
+  position: relative;
   padding-top: 150px;
+
+  
+}
+
+li {
+  list-style: none;
 }
 
 hr {
   border: solid #999;
   border-width: 1px 0 0;
 }
+
+/* 
+Forms 
+-------------------------------------------------------------------------------
+*/
+
+input[type=text], input[type=text]:focus {
+  font-family: 'Lato';
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  outline: 0;
+  width: 100%;
+  border: 0;  
+}
+
+
+
+
 
 /* 
 Typography 
