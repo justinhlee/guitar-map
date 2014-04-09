@@ -18,18 +18,15 @@
         </div>
        
 
-
-
-       
         
         <div class="content">
             <div id ="guitar-app">
                 <div class="row">
-                    <canvas id="canvas" width="900" height="200"></canvas>
+                    <canvas id="canvas" width="960" height="200"></canvas>
                 </div>
 
                 <div class="row">
-                    <div class="col-4"><input id="new-chord" type="text" placeholder="Enter chord here (e.g. C#maj7)">
+                    <div class="col-6"><input id="new-chord" type="text" placeholder="Enter chord here (e.g. C#maj7)">
                     <ul id="chord-list">
                             
                         </ul>
@@ -37,9 +34,14 @@
 
                     </div>
 
-                    <div class="col-4">
-                        
-                    
+                    <div class="col-2">
+                        <div class="play-menu">
+                            <button id ="prev">Prev</button>
+                            <button id ="next">Next</button>
+                            
+                        </div>
+                       
+
                     </div> 
                 </div>
                 
@@ -61,6 +63,7 @@
         <script src="js/underscore.js"></script>
         <script src="js/Backbone.js"></script>
         <script src="js/backbone.localStorage.js"></script>
+
         <script src="js/main.js"></script>
   </body>
 </html>
