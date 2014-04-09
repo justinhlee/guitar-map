@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Guitar Map</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="row">
+                <div class="col-8">
+                <ul>
+                    <li><a href="#" id ="chart">About</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="row">
+                <div class="col-2">
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p>Welcome. <br><br>
+                    This is an interactive application to view finger positions of chord progressions on a guitar fretboard.<br><br>
+
+                    Currently, as a rough prototype, it supports major, m, maj7, and min7 chords. <br><br>
+                    Text input format should adhere to standard chord notation. The sharp symbol and lowercase b are used to denote accidentals.<br><br>
+                    Some examples:
+                   
+                    <ul>
+                        <li>Bbmin7</li>
+                        <li>C#maj7</li>
+                        <li>C</li>
+                        <li>Am</li>
+                    </ul>
+                    </p>
+                </div>
+           
+            </div>
+  
+            
+            
+        </div>
+
+       
+        
+        <div class="content">
+            <div id ="guitar-app">
+                <div class="row">
+
+                    <canvas id="canvas" width="960" height="200"></canvas>
+                </div>
+
+                <div class="row">
+                    <div class="col-6"><input id="new-chord" type="text" placeholder="Enter chord here (e.g. C#maj7)">
+                        <ul id="chord-list">
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="play-menu">
+                            <button id ="prev">Prev</button>
+                            <button id ="next">Next</button>
+                            
+                        </div>
+
+                    </div> 
+                </div>
+                
+            </div>
+            
+
+        </div>
+        
+        <!-- JavaScript -->
+        <script type="text/template" id="item-template">
+            <div class="view">
+            <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+            <label><%- title %></label>
+            <a class="destroy"></a>
+            </div>
+            <input class="edit" type="text" value="<%- title %>" />
+        </script> 
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/Backbone.js"></script>
+        <script src="js/backbone.localStorage.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/transitions.js"></script>
+  </body>
+</html>
