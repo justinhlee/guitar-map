@@ -13,7 +13,6 @@ $(function() {
         name: 'no chord',
         positions: [],
         current: false,
-        opacity: 0.1
       };
     }
   });
@@ -117,7 +116,7 @@ $(function() {
     el: $('#guitar-app'),
 
     events: {
-      'keypress #new-chord' : 'addOnEnter',
+      'keypress #new-chord' : 'addOnEnter',   
       'click #prev'         : 'prevChord',
       'click #next'         : 'nextChord'
     },
@@ -148,7 +147,6 @@ $(function() {
         name: this.input.val(),
         positions: getFingerPositions(this.input.val()),
         current: isCurrent,
-        opacity: 0.1
       }));
       this.input.val('');
     },

@@ -13,25 +13,60 @@
 
     </head>
     <body>
-        <div class="sidebar">
+        <div class="navigation">
+            <div class="row">
+                <div class="col-8">
+                <ul>
+                    <li><a href="#" id ="chart">About</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="row">
+                <div class="col-2">
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p>Welcome. <br><br>
+                    This is an interactive application to view finger positions of chord progressions on a guitar fretboard.<br><br>
+
+                    Currently, as a rough prototype, it supports major, m, maj7, and min7 chords. <br><br>
+                    Text input format should adhere to standard chord notation. The sharp symbol and lowercase b are used to denote accidentals.<br><br>
+                    Some examples:
+                   
+                    <ul>
+                        <li>Bbmin7</li>
+                        <li>C#maj7</li>
+                        <li>C</li>
+                        <li>Am</li>
+                    </ul>
+                    </p>
+                </div>
+           
+            </div>
+  
+            
             
         </div>
-       
 
+       
         
         <div class="content">
             <div id ="guitar-app">
                 <div class="row">
+
                     <canvas id="canvas" width="960" height="200"></canvas>
                 </div>
 
                 <div class="row">
                     <div class="col-6"><input id="new-chord" type="text" placeholder="Enter chord here (e.g. C#maj7)">
-                    <ul id="chord-list">
+                        <ul id="chord-list">
                             
                         </ul>
-              
-
                     </div>
 
                     <div class="col-2">
@@ -40,7 +75,6 @@
                             <button id ="next">Next</button>
                             
                         </div>
-                       
 
                     </div> 
                 </div>
@@ -65,5 +99,6 @@
         <script src="js/backbone.localStorage.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="js/transitions.js"></script>
   </body>
 </html>

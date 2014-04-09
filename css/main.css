@@ -5,8 +5,8 @@ Body
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   letter-spacing: 0.75px;
   color: #2B3A42;
@@ -15,12 +15,49 @@ body {
   background-color: #EFEFEF;
 }
 
+.chart {
+  padding-top: 150px;
+  display: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
 
 .content, .content-inner {
   position: relative;
-  padding-top: 150px;
+  padding-top: 200px;
+}
 
+.navigation {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  background-color: #E74C3C;
+  z-index: 10;
+  letter-spacing: 2px;
+  color: #EFEFEF;
   
+  font-size: 12px;
+  line-height: 8px;
+}
+
+.navigation ul {  
+  list-style: none;
+  padding: 0px; 
+}
+
+.navigation li {
+  padding-right: 30px;
+  display: inline;
+}
+
+.navigation li a:hover, a:focus {
+  text-decoration: none;
+  border-bottom: 2.5px solid #EFEFEF;
+}
+
+.navigation a {
+  text-decoration: none;
 }
 
 li {
@@ -47,6 +84,7 @@ input[type=text], input[type=text]:focus {
   border: 0;  
   color: #3F5765;
   background-color: #EFEFEF;
+
 }
 
 .play-menu {
@@ -62,6 +100,7 @@ button {
   letter-spacing: 1.25px;
   padding: 5px;
   width: 80px;
+  transition: 0.3s;
 }
 
 .button:hover,
@@ -71,6 +110,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover {
   background-color: #BDD4DE;
   cursor: pointer;
+
 }
 
 .button:focus,
@@ -80,9 +120,6 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   outline: 0;
 }
-
-
-
 
 
 /* 
@@ -96,15 +133,12 @@ h1 {
 }
 
 a, a:visited {
-  color: #444;
+  color: #EFEFEF;
   text-decoration: none;
   text-decoration: underline;
  
 }
 
-a:hover, a:focus {
-  color: #999;
-}
 
 
 /* 
