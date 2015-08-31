@@ -89,7 +89,14 @@ $(function() {
     render: function() {
       var that = this;
       this._rendered = true;
-      var canvas = $('canvas')[0], ctx = canvas.getContext('2d');
+      var canvas = $('canvas')[0];
+      canvas.width = 1920;
+      canvas.height = 400;
+      canvas.style.width = "960px";
+      canvas.style.height = "200px";
+      var ctx = canvas.getContext('2d');
+      ctx.scale(window.devicePixelRatio,window.devicePixelRatio);
+
       ctx.clearRect(0,0,960,200); // clear canvas
       drawStrings(ctx);
       $(this.el).empty();
@@ -125,6 +132,7 @@ $(function() {
       this.canvas = $('canvas')[0];
       this.ChordsView = new ChordProgressionView({collection : Chords});
       if (this.canvas.getContext) {
+
         this.render();
       }
       this.input = this.$('#new-chord');
@@ -303,7 +311,7 @@ function drawStrings(fretboard) {
       var x = i * fretDistance - (fretDistance/2 - 1);
       var y = stringDistance * 5 ;
       fretboard.arc(x,y, 5, 0, Math.PI*2, true);
-      fretboard.fillStyle = '#3F5765';
+      fretboard.fillStyle = '#E74C3C';
       fretboard.fill();
     }
   }
